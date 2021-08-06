@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Donation System</title>
+  </head>
+  <style>
+	h1 {font-size:40px;}
+	h2 {font-size:30px;}
+	p {font-size:14px;}
+    input {
+      display: block;
+      margin-bottom: 12px;
+    }
+  </style>
+  <body>
+	<h1 style="text-align:center;">Welcome to the Donation System</h1>
+	<hr>
+	<div>	
+		<h3>Victim information</h3>
+		<p>这里随着申请增加展示受害者信息</p>
+		<ol>
+			<li><strong id="1">loading...</strong></li>
+			<li><strong id="2">loading...</strong></li>
+			<li><strong id="3">loading...</strong></li>
+			<li>怎么自动增加呢？</li>
+		</ol>
+	</div>
+	<br>
+	<div>
+		<h3>Apply For Assisstance</h3>
+		<label>Your Address: </label>
+		<input type="text" id="neederAddress" placeholder="e.g.						0x93e66d9baea28c17d9fc393b53e3fbdd76899dae"/>
+		<label>Target amount: </label>
+		<input type="text" id="goal" placeholder="e.g. 4000"/>
+		<button onclick="">apply for</button>
+	</div>
+	<br>
+	<div>
+		<h3>Contribution</h3>
+		<label>NeederAmount: </label>
+		<input type="text" id="neederNumber" placeholder="e.g. 1" />
+		<button onclick="">contribute</button>
+		<p font-size:14px><strong>Hint:</strong>Donations will be made through metamask</p>
+	</div>
+	<br>
+	<div>
+		<h3>Verify whether the fund-raising is completed</h3>
+		<label>NeederAmount: </label>
+		<input type="text" id="neederNumber" placeholder="e.g. 1" />
+		<button onclick="">verify</button>
+	</div>
+	
+	<br>
+	<br>
+	<p>
+      <strong>Hint:</strong> open the browser developer console to view any
+      errors and warnings.
+    </p>
+    <script src="index.js"></script>
+  </body>
+</html>
